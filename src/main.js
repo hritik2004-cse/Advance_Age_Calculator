@@ -40,37 +40,39 @@ const calculateAge = () => {
   const result = document.getElementById("result");
 
   result.innerHTML = `
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">age:</h3>
-        <p class="text-sm text-white/70">${ageInYears} years, ${ageInMonths % 12} months, ${ageInDays % 30} days</p>
+    <div class="mb-5 pb-4 border-b border-white/10">
+      <p class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase mb-1">Your Age</p>
+      <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-200 to-cyan-300 leading-tight">${ageInYears} <span class="text-lg font-semibold text-slate-400">yrs</span> &nbsp;${ageInMonths % 12} <span class="text-lg font-semibold text-slate-400">mo</span> &nbsp;${ageInDays % 30} <span class="text-lg font-semibold text-slate-400">days</span></p>
     </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">months passed:</h3>
-        <p class="text-sm text-white/70">${ageInMonths} months</p>
-    </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">weeks passed:</h3>
-        <p class="text-sm text-white/70">${ageInWeeks} weeks</p>
-    </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">days passed:</h3>
-        <p class="text-sm text-white/70">${ageInDays} days</p>
-    </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">hours passed:</h3>
-        <p class="text-sm text-white/70">${ageInHours} hours</p>
-    </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">minutes passed:</h3>
-        <p class="text-sm text-white/70">${ageInMinutes} minutes</p>
-    </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">seconds passed:</h3>
-        <p class="text-sm text-white/70">${ageInSeconds} seconds</p>
-    </div>
-    <div class="flex items-center gap-2 mb-1">
-        <h3 class="text-md text-white capitalize">milliseconds passed:</h3>
-        <p class="text-sm text-white/70">${ageInMilliSeconds} ms</p>
+    <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Months</span>
+        <span class="text-base font-semibold text-white">${ageInMonths} <span class="text-sm font-normal text-slate-400">months</span></span>
+      </div>
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Weeks</span>
+        <span class="text-base font-semibold text-white">${ageInWeeks} <span class="text-sm font-normal text-slate-400">weeks</span></span>
+      </div>
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Days</span>
+        <span class="text-base font-semibold text-white">${ageInDays} <span class="text-sm font-normal text-slate-400">days</span></span>
+      </div>
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Hours</span>
+        <span class="text-base font-semibold text-white">${ageInHours} <span class="text-sm font-normal text-slate-400">hrs</span></span>
+      </div>
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Minutes</span>
+        <span class="text-base font-semibold text-white">${ageInMinutes} <span class="text-sm font-normal text-slate-400">min</span></span>
+      </div>
+      <div class="flex flex-col gap-0.5">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Seconds</span>
+        <span class="text-base font-semibold text-white">${ageInSeconds} <span class="text-sm font-normal text-slate-400">sec</span></span>
+      </div>
+      <div class="col-span-2 flex flex-col gap-0.5 pt-1 border-t border-white/10">
+        <span class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase">Milliseconds</span>
+        <span class="text-base font-semibold text-white">${ageInMilliSeconds.toLocaleString()} <span class="text-sm font-normal text-slate-400">ms</span></span>
+      </div>
     </div>
   `;
 
