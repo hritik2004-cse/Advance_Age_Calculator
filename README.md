@@ -1,4 +1,4 @@
-﻿# ⏳ Advance Age Calculator
+# ⏳ Advance Age Calculator
 
 A sleek, glassmorphic age calculator that tells you your exact age broken down into **years, months, weeks, days, hours, minutes, seconds, and milliseconds** — all from a single birth date input.
 
@@ -102,6 +102,24 @@ Advance_Age_Calculator/
 - **Ambient Orbs**: Animated violet and cyan blur circles behind the card using a custom `animate-pulse-glow` keyframe
 - **Result Grid**: A 2-column Tailwind grid with ALLCAPS slate labels above each bold white value
 - **Gradients**: All gradient text and buttons use Tailwind v4 `bg-linear-to-r` with the `from-violet via-indigo to-cyan` palette
+
+---
+
+## 🔭 Future Scope
+
+Planned features and enhancements for upcoming versions:
+
+| Feature | Description |
+|---|---|
+| 🎂 **Next Birthday Countdown** | Show how many days are left until the user's next birthday |
+| 📅 **Birth Day of Week** | Display what day of the week the user was born on |
+| ❤️ **Total Heartbeats** | Approximate heartbeat count since birth (avg. 70 bpm) |
+| 😴 **Hours Slept** | Estimated total sleep hours based on age-appropriate averages |
+| 🌍 **Age on Other Planets** | Calculate equivalent age on Mars, Jupiter, Saturn, and more |
+| ⏳ **Live Age Counter** | A real-time ticker that updates the age every second |
+| 📋 **Copy Results Button** | One-click copy of all age stats to clipboard |
+| 🌙 **Dark / Light Mode Toggle** | Switch between the dark glassmorphic theme and a light variant |
+| 🎉 **Birthday Confetti** | Trigger a confetti animation if today matches the user's birthday |
 
 ---
 
