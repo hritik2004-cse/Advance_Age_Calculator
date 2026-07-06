@@ -4,10 +4,66 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>advance-age-calculator</title>
+    <title>Advance Age Calculator</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div
+      class="relative min-h-screen w-full flex flex-col justify-start selection:bg-indigo-500/30 selection:text-indigo-200"
+    >
+      <nav
+        class="relative z-20 flex items-center justify-between w-full max-w-6xl mx-auto px-6 py-6 md:py-8"
+      >
+        <h1
+          class="text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-200 to-cyan-300 text-xl md:text-2xl font-extrabold tracking-tight select-none"
+        >
+          Advance Age Calculator
+        </h1>
+        <a href="#" class="group relative inline-flex"
+          ><button
+            class="relative text-white bg-linear-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:via-indigo-500 hover:to-cyan-400 font-semibold py-2.5 px-5 rounded-xl cursor-pointer transition-all duration-300 shadow-[0_4px_15px_rgba(99,102,241,0.25)] hover:shadow-[0_4px_25px_rgba(99,102,241,0.45)] hover:scale-[1.02] active:scale-[0.98] text-sm md:text-md"
+          >
+            See more projects
+          </button></a
+        >
+      </nav>
+      <section
+        class="grow flex items-center justify-center w-full px-4 py-12 md:py-20 relative z-10"
+      >
+        <div
+          class="relative w-full max-w-sm md:max-w-md bg-white/3 backdrop-blur-xl border border-white/8 rounded-3xl p-8 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-white/15 hover:shadow-[0_20px_50px_rgba(99,102,241,0.15)] flex flex-col justify-center overflow-hidden"
+        >
+          <div
+            class="bg-violet-600 rounded-full h-32 w-32 md:h-48 md:w-48 blur-[80px] md:blur-[120px] absolute -top-10 -right-10 z-0 animate-pulse-glow"
+          ></div>
+          <div
+            class="bg-cyan-500 rounded-full h-32 w-32 md:h-48 md:w-48 blur-[80px] md:blur-[120px] absolute -bottom-10 -left-10 z-0 animate-pulse-glow [animation-delay:4s]"
+          ></div>
+          <form
+            id="ageCalculator"
+            class="relative z-10 w-full flex flex-col gap-6"
+          >
+            <label
+              for="birthDate"
+              class="text-xs md:text-sm font-semibold tracking-widest text-slate-400 uppercase select-none"
+              >Enter your birth date:</label
+            >
+            <input
+              type="text"
+              class="w-full bg-white/4 border border-white/10 rounded-2xl px-5 py-4 text-white text-lg placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent focus:bg-white/7 transition-all duration-300 shadow-inner"
+              id="birthDate"
+              placeholder="DD-MM-YYYY"
+              required
+              maxlength="10"
+            />
+            <input
+              type="submit"
+              value="Calculate"
+              class="w-full text-white bg-linear-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:via-indigo-500 hover:to-cyan-400 active:from-violet-700 active:to-cyan-600 py-4 px-6 rounded-2xl text-base font-semibold tracking-wide cursor-pointer transition-all duration-300 shadow-[0_4px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_4px_25px_rgba(99,102,241,0.5)] active:scale-[0.98] select-none hover:-translate-y-0.5 active:translate-y-0"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
